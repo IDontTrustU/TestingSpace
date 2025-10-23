@@ -1,0 +1,43 @@
+using System;
+
+namespace HelloWorld
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+     Console.WriteLine("hey there, buddy!");
+     Console.WriteLine(". ");
+     Console.Write(". ");
+     Console.Write(". ");
+     Console.WriteLine("okay, well... thats okay! you don\' have to tell me!");
+     Console.WriteLine("but do you want to know my name?");
+     Console.WriteLine("It\'s \"Rusty!\" Rusty the Robot!");
+     Console.WriteLine(". ");
+     Console.Write(". ");
+     Console.Write(". ");
+     Console.WriteLine("uh... do you like my name?");
+     Console.WriteLine("(press down if you hate it, up if you like it!)");
+     ConsoleKeyInfo keyInfo = Console.ReadKey();
+if (keyIinfo == UpKey)
+{
+bool like_my_name = true;
+Console.WriteLine("aw, thanks!");
+}
+else if (keyInfo == DownKey)
+{
+bool like_my_name = false;
+Console.WriteLine("oh, uh... sorry. nevermind. \n (that was stupid of me!!!) ");
+else
+{
+bool like_my_name = false;
+Console.WriteLine("you, uh, didn\'t say yes or no, \n so I\'ll take it as a no.");
+}
+//poor guy, why would you say that to him?
+if (like_my_name == false)
+{
+Console.WriteLine("you should probably, uh leave. \n there's not really anything to do around here, and I won\'t change my name.");
+}
+    }
+  }
+}
